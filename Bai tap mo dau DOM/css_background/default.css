@@ -1,0 +1,65 @@
+
+button{
+  background: linear-gradient(to right, rgba(248,80,50,0.6) 0%, rgba(241,111,92,0.6) 0%, rgba(245,12,117,0.89) 51%, rgba(231,56,39,0.79) 100%);
+  border-radius: 1px;
+  padding: 10px 48px;
+  color: #FFFFFF;
+  height: 40px;
+  margin-top: -18px;
+}
+.box div{
+   display: inline-block;
+}
+body{
+  background: url(Background/Background.jpg) no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+
+}
+.box{
+   height: 3350px;
+  width: 1092px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+}
+.box-personal{
+  height: 340px;
+  width: 250px;
+  background: rgba(0, 0, 3, 0.4);
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1.5%;
+ /* margin-bottom: 5%;*/
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.box-img{
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.box-personal h1{
+    margin-top: 10px;
+  color: blue;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.box-personal h5{
+    color: blue;
+  margin-top: -10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box-personal p{
+  font-size: 20px;
+  line-height: 1.6;
+}
