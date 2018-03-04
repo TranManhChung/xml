@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Khách Tham Quan</title>
+</head>
+<body style="width: 100%; margin: 0px; font-family: arial; background: url(../Media/background.jpg) no-repeat;  background-size: cover;">
+    <div id="Khung_Logo_Ten_Nha_Hang" style="display: inline-block; float: left; width: 140px; text-align: center; color: blue;
+    margin-top:10px;margin-right:10px;margin-left:90px;   border: 2px solid blue; border-radius: 25px;">
+      <img src="../Media/PET.png" style="width: 50px; height: 30px; margin-top: 10px;">
+     <p>Nhà Hàng Pet</p>
+    </div>
+
+      <div id="Khung_Khach_Ten_Trang" style="display: inline-block; margin: 10px 0; width:30%; height:100px; border:2px solid blue; float: left; border-radius: 25px;">
+        <img style="float: left; border-radius: 49%; height: 40px; margin:5px;" src="../Media/Khach_tham_quan_2.png">
+        <p style="color:blue;">Quản Lý</p>
+        <p style="color:blue; font-size: 30px; margin-top: 0px; margin-left:5px;">DANH SÁCH MÓN ĂN</p>
+      </div>
+
+      <div id="Khung_Tim_Kiem" style="clear: right; display: inline-block; margin: 10px; width:45%; height:100px; border:2px solid blue; float: left;border-radius: 25px;">
+      	<div style=" width:47%;float:left;">
+      		<p style="margin-left: 5px; color: blue;">Tìm Kiếm</p>
+        	<input type="text" name="q" autocomplete="off" value="" style="margin:0 5px;" placeholder="Tìm món...">
+     	   <button>TÌM</button>
+      	</div>
+        <div style="display:inline-block; color: blue">
+        	<p style="margin-left: 5px;">Kết quả</p>
+        	<p id="KET_QUA_TIM_KIEM"></p>
+        </div>
+      </div>
+        <div id="CUA_SO_KET_QUA" style="text-align: center; width: 100%;float: right;"></div>
+
+</body>
+</html>
+
+<script src="../3-Doi_tuong_va_Xu_ly/3B-Xu_ly_3L.js" ></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+//*************** Biến dùng chung  ************
+
+//*************** Biến Cố Khởi động  ************
+document.body.onload =() => {
+  var Danh_sach_Mat_hang =Doc_Danh_sach_Mat_hang()
+  var Th_Danh_sach_Mat_hang=Tao_Th_Danh_sach_Mat_hang(Danh_sach_Mat_hang)
+  CUA_SO_KET_QUA.appendChild(Th_Danh_sach_Mat_hang)
+}
+//*************** Biến Cố Yêu cầu Tra cứu  ************
+$( "button" ).click(function() {
+  var text = $("input:text").val()
+  Tim_Mat_Hang(text,'KET_QUA_TIM_KIEM')
+});
+ </script> 
